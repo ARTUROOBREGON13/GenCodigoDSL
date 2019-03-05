@@ -14,7 +14,7 @@ def main(debug=False):
 
     categoria_mm = get_categoria_mm(debug)
 
-    # Build Person model from person.ent file
+    # Build Person model from tienda.ent file
     modelo_tienda = categoria_mm.model_from_file(join(this_folder, 'tienda.ent'))
 
     def javatype(s):

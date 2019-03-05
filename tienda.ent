@@ -24,7 +24,6 @@ estilo estilo_servicios{
 	Color letra black;
 }
 
-
 categoria CyT{ 
 	estilo home;
 	subCategoria Concentrado;
@@ -33,7 +32,6 @@ categoria CyT{
 	subCategoria Medicamentos;
 	subCategoria Servicios;
 } 
-
 
 categoria Concentrado{
 	estilo home;
@@ -82,6 +80,4 @@ categoria Veterinario{
 	filtro Tamano;
 	filtro Precio;
 } 
-
-
 

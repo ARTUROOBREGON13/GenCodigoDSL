@@ -6,8 +6,9 @@ EComerce:
     tipos+=TipoSimple   
     filtros+=Filtro      
     estilos+=Estilo	            
-    categorias+=Categoria      
+    categorias+=Categoria
 ;
+
 
 Estilo:
     'estilo' name=ID '{'
@@ -60,14 +61,15 @@ Caracteristica:
 ;
 
 Productos:
-    'Productos' name=[Producto] ';'
+    'Productos' name=[contenidoProducto] ';'
 ;
 
-Producto:
+contenidoProducto:
     'producto' name=ID 
     '{'
-       'src' src=ID ';'
-       'nombre' nombre=ID ';'
-       'tipo' tipo=ID ';'
+        'src' src=ID';' 
+        'nombre' nombre=ID ';' 
+        'tipo' tipo=ID ';'
     '}'
 ;
+

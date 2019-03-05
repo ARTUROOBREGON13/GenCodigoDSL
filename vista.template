@@ -14,7 +14,6 @@
       function filtro{{Filtro.name.name}}() {
         alert("Se filtra por {{Filtro.name.name}}");
       }
-    
 
    	 {% endfor %}	
     {% endfor %}
@@ -60,20 +59,19 @@
 			</ul>
 	</div>
 		    
-		<div id="content">
-			<div id="area_productos">
-				{% for contenidoCategoria in categoria.contenidoCategorias %}
-				 	{% for Producto in contenidoCategoria.productos%}
-						
+		<div id="content" {% if categoria.name == 'CyT' %} hidden {% endif %}>
+			<div id="area_productos">	
       			<div id="espaciado" style="height:10px; width:auto"> </div>
-		      			<a href="../Imagenes/productos/{{Producto.Tipo.name}}/{{Producto.Src.name}}.jpg"><img class="imagen" src="../Imagenes/productos/1m.jpg"></a>
+		      			<a href="../Imagenes/productos/{{categoria.name}}/1.jpg"><img class="imagen" src="../Imagenes/productos/{{categoria.name}}/1.jpg"></a>
 		          <div>
-		            <b><span id="pro0">Camisa roja</span>:&nbsp;<span id="pre0">100.000</span></b>
+		            <b><span id="pro0">{{categoria.name}} 1</span>:&nbsp;<span id="pre0">40.000</span></b>
 		          </div>
-						   	{% endfor %}	
-    					{% endfor %}
+		      			<a href="../Imagenes/productos/{{categoria.name}}/3.jpg"><img class="imagen" src="../Imagenes/productos/{{categoria.name}}/3.jpg"></a>
+		          <div>
+		            <b><span id="pro1">{{categoria.name}} 2</span>:&nbsp;<span id="pre0">45.000</span></b>
+		          </div>
 			</div>
-</div>
+		</div>
 		<!-- end #content -->
 		
 		<div style="clear: both;">&nbsp;</div>
@@ -82,7 +80,7 @@
 	<!-- end #page -->
 	<div id="footer-bgcontent">
 	<div id="footer">
-		<p>Copyright  2018.</p> <p>Tatiana Velandia - 20111020092<a href="#"></a>.</p> 
+		<p>Copyright  2019.</p> <p>Tatiana Velandia - 20111020092<a href="#"></a>.</p> 
 		<p>Carlos Obregon - 20141020009<a href="#"></a>.</p>
 	</div>
 	</div>
