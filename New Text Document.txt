@@ -1,0 +1,49 @@
+Producto ELightPG{
+	Src 2;
+	Producto ConcentradoEquilibrioLightPG;
+	Tipo Concentrado;
+}
+Producto ELightGP{
+	Src 3;
+	Producto ConcentradoEquilibrioLightGatoP;
+	Tipo Concentrado;
+}
+Producto ProPlanM{
+	Src 4;
+	Producto ConcentradoProPlanMedium;
+	Tipo Concentrado;
+}
+Producto Hop{
+	Src 5;
+	Producto ConcentradoHop;
+	Tipo Concentrado;
+}
+Producto MeowMix{
+	Src 6;
+	Producto ConcentradoMeowMix;
+	Tipo Concentrado;
+}
+
+Producto Monello{
+	Src 7;
+	Producto ConcentradoMonello;
+	Tipo Concentrado;
+}
+
+Producto OMG{
+	Src 8;
+	Producto ConcentradoOhMaiGat;
+	Tipo Concentrado;
+}
+
+Producto ELightGG{
+	Src 9;
+	Producto ConcentradoEquilibrioLightGatoG;
+	Tipo Concentrado;
+}
+
+Producto Max{
+	Src 10;
+	Producto ConcentradoMaxCat;
+	Tipo Concentrado;
+}

@@ -1,0 +1,76 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+56392984 -> 56334224[arrowtail=diamond, dir=both, headlabel="tipos 1..*"]
+56392984 -> 56638272[arrowtail=diamond, dir=both, headlabel="filtros 1..*"]
+56392984 -> 56335168[arrowtail=diamond, dir=both, headlabel="estilos 1..*"]
+56392984 -> 56387944[arrowtail=diamond, dir=both, headlabel="categorias 1..*"]
+56392984[ label="{EComerce|}"]
+
+56335168 -> 56649616[arrowtail=diamond, dir=both, headlabel="contenidoEstilos "]
+56335168[ label="{Estilo|+name:ID\l}"]
+
+56387944 -> 56335168[headlabel="estilo "]
+56387944 -> 56385584[arrowtail=diamond, dir=both, headlabel="contenidoCategorias 1..*"]
+56387944[ label="{Categoria|+name:ID\l}"]
+
+56385584 -> 56636856[arrowtail=diamond, dir=both, headlabel="filtros 1..*"]
+56385584 -> 56635440[arrowtail=diamond, dir=both, headlabel="subCategorias 1..*"]
+56385584[ label="{contenidoCategoria|}"]
+
+56635440 -> 56387944[headlabel="name "]
+56635440[ label="{subCategoria|}"]
+
+56636856 -> 56638272[headlabel="name "]
+56636856[ label="{FiltroSimple|}"]
+
+56638272 -> 56648200[headlabel="tipo "]
+56638272[ label="{Filtro|+name:ID\l}"]
+
+56648200[ label="{*Tipo|}"]
+56648200 -> 56334224 [dir=back]
+56648200 -> 56387944 [dir=back]
+
+56334224[ label="{TipoSimple|+name:ID\l}"]
+
+56649616 -> 56651032[arrowtail=diamond, dir=both, headlabel="banner "]
+56649616 -> 56651032[arrowtail=diamond, dir=both, headlabel="letra "]
+56649616[ label="{contenidoEstilo|}"]
+
+56651032[ label="{Caracteristica|+name:ID\l}"]
+
+56335640[ label="{ID|}"]
+
+56390624[ label="{STRING|}"]
+
+56392040[ label="{BOOL|}"]
+
+56447024[ label="{INT|}"]
+
+56448440[ label="{FLOAT|}"]
+
+56449856[ label="{NUMBER|}"]
+56449856 -> 56448440 [dir=back]
+56449856 -> 56447024 [dir=back]
+
+56386056[ label="{BASETYPE|}"]
+56386056 -> 56449856 [dir=back]
+56386056 -> 56392040 [dir=back]
+56386056 -> 56335640 [dir=back]
+56386056 -> 56390624 [dir=back]
+
+56387472[ label="{*OBJECT|}"]
+56387472 -> 56386056 [dir=back]
+
+
+}

@@ -1,0 +1,87 @@
+tipo numero;
+tipo letra;
+tipo letras;
+tipo secos;
+
+Precio se filtra por numero;
+Talla se filtra por letra;	
+Color se filtra por letras;
+Tipo se filtra por secos;
+Marca se filtra por letras;
+Tamano se filtra por numero;
+Proteina se filtra por letras;	
+Mascota se filtra por letras;
+Edad se filtra por numero;
+Presentacion se filtra por letras;
+
+estilo home{
+	Color banner ff914d;
+	Color letra black;
+}
+
+estilo estilo_servicios{
+	Color banner a078ff;
+	Color letra black;
+}
+
+
+categoria CyT{ 
+	estilo home;
+	subCategoria Concentrado;
+	subCategoria Juguetes;
+	subCategoria Higiene;
+	subCategoria Medicamentos;
+	subCategoria Servicios;
+} 
+
+
+categoria Concentrado{
+	estilo home;
+	filtro Tipo;
+	filtro Marca;
+	filtro Tamano;
+	filtro Proteina;
+}
+
+categoria Juguetes{
+	estilo home;
+	filtro Marca;
+	filtro Tamano;
+	filtro Talla;
+}
+
+categoria Higiene{
+	estilo estilo_servicios;
+	filtro Mascota;
+	filtro Edad;
+	filtro Precio;
+	filtro Marca;
+}
+
+categoria Medicamentos{
+	estilo estilo_servicios;
+	filtro Marca;
+	filtro Mascota;
+	filtro Edad;
+	filtro Presentacion;
+}
+
+categoria Servicios{
+	estilo estilo_servicios;
+	subCategoria Peluqueria;
+	subCategoria Veterinario;
+}
+
+categoria Peluqueria{
+	estilo estilo_servicios;
+	filtro Precio;
+}
+
+categoria Veterinario{
+	estilo estilo_servicios;
+	filtro Tamano;
+	filtro Precio;
+} 
+
+
+
